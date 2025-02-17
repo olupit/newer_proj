@@ -10,6 +10,7 @@ def load_data(filepath):
         return None
 
 def clean_data(df):
-    """Drop missing values from the Dataframe (updated docstring)."""
+    """Drop missing values from the Dataframe (updated docstring) and changing column names to lower case."""
     df = df.dropna()
+    df.columns = df.columns.str.lower()
     return df

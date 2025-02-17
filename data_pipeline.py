@@ -11,6 +11,7 @@ def load_data(filepath):
 
 def clean_data(df):
     """Perform data cleaning by dropping missing values, removing duplicate row and standardising column names."""
-    df = df.dropna()  # Drop missing values
+    df = df.dropna() 
     df = df.drop_duplicates()
+    df.columns = df.columns.str.lower()
     return df

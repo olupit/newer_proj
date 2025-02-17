@@ -13,3 +13,7 @@ def clean_data(df):
     """Perform basic cleaning on the DataFrame."""
     df = df.dropna()  # Drop missing values
     return df
+
+def handle_missing_values(df):
+    """Fill missing values with column mean."""
+    return df.fillna(df.mean())

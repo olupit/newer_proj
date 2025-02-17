@@ -10,6 +10,6 @@ def load_data(filepath):
         return None
 
 def clean_data(df):
-    """Perform basic cleaning on the DataFrame."""
-    df = df.dropna()  # Drop missing values
+    """Drop missing values from the Dataframe (updated docstring)."""
+    df = df.dropna()
     return df
